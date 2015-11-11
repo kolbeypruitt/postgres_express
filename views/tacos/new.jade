@@ -1,0 +1,8 @@
+extends ../layout
+
+block content
+  h1 new tacos
+    form(action='/tacos' method='post')
+      input(type='text' name='shell' placeholder='shell' required)
+      input(type='text' name='taste' placeholder='taste' required)
+      input(type='submit')

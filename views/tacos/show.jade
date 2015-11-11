@@ -1,0 +1,7 @@
+extends ../layout
+
+block content
+  <h1>Taco Show Page</h1>
+  h3=taco.shell
+  h3=taco.taste
+  a(href="/tacos/" + taco.id + "/kill") delete taco

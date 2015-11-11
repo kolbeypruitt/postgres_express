@@ -1,0 +1,11 @@
+extends ../layout
+
+block content
+  h1 Tacos
+    ul
+      for taco in tacos
+        li
+          a(href='/tacos/' + taco.id)=taco.shell + " -- " + taco.taste
+  h1
+    a(href='/tacos/new') add a new taco
+
